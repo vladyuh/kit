@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Главная</title>
+    <meta name="theme-color" content="#000">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  </head>
+  <body class="perf-no-animation page">
+    <header class="header">
+      <div class="container">
+        <div class="header-burger">
+              <div class="burger"><span></span><span></span><span></span><span></span></div>
+        </div>
+        <div class="header-logo">
+          <div class="header-logo__img"></div>
+        </div>
+        <div class="header-nav">
+          <ul class="header-nav__ul">
+            <li><a href="#breadcrumbs">Breadcrumbs</a></li>
+            <li><a href="#buttons">Buttons</a></li>
+            <li><a href="#inputs">Inputs</a></li>
+            <li><a href="#selects">Selects</a></li>
+            <li><a href="#forms">Form</a></li>
+            <li><a href="#checkbox">Checkboxes</a></li>
+            <li><a href="#edittext">Text</a></li>
+          </ul>
+          <ul class="header-nav__more">
+            <li class="header-nav__moreLi" style="display:none"><a>More</a>
+              <ul class="submenu"></ul>
+            </li>
+          </ul>
+        </div>
+        <div class="header-feedback"></div>
+      </div>
+    </header>
+    <div class="mobileMenu">
+      <div class="container">
+        <div class="mobileMenu-header">
+          <div class="mobileMenu-header__toggle">
+                <div class="burger open"><span></span><span></span><span></span><span></span></div>
+          </div>
+        </div>
+        <div class="mobileMenu-nav">
+          <ul class="mobileMenu-nav__ul">
+            <li><a href="#breadcrumbs">Breadcrumbs</a></li>
+            <li><a href="#buttons">Buttons</a></li>
+            <li><a href="#inputs">Inputs</a></li>
+            <li><a href="#selects">Selects</a></li>
+            <li><a href="#forms">Form</a></li>
+            <li><a href="#checkbox">Checkboxes</a></li>
+            <li><a href="#edittext">Text</a></li>
+          </ul>
+        </div>
+        <div class="mobileMenu-footer"></div>
+      </div>
+    </div>
+    <main>
+      <section id="breadcrumbs">
+        <div class="container">
+          <div class="section-h2">Хлебные крошки</div>
+          <div class="breadcrumb">
+            <ul>
+              <li><a href="/">Главная</a></li>
+              <li><a class="is-active" href="/">Элементы</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="buttons">
+        <div class="container">
+          <div class="section-h2">Кнопки</div>
+          <div class="buttons">
+            <div class="section-h3">Кнопки</div>
+            <button class="btn">Кнопка</button>
+            <button class="btn btn-disabled">Кнопка</button>
+          </div><br>
+          <div class="buttons">
+            <div class="section-h3">Кнопки с закругленными углами</div>
+            <button class="btn btn-round">Кнопка с закругленными углами</button>
+            <button class="btn btn-disabled btn-round">Кнопка с закругленными углами</button>
+          </div><br>
+          <div class="buttons">
+            <div class="section-h3">Кнопка cсылка</div>
+            <button class="btn btn-link btn-round">Кнопка ссылка<a data-popup href="#callback"></a></button>
+          </div><br>
+          <div class="buttons">
+            <div class="section-h3">Кнопка отправки</div>
+            <button class="btn btn-round" type="submit">Кнопка отправки</button>
+            <button class="btn btn-loading btn-round" type="submit">Кнопка отправки</button>
+            <button class="btn btn-success btn-round" type="submit">Кнопка отправки</button>
+            <button class="btn btn-round btn-disabled" type="submit">Кнопка отправки</button>
+          </div>
+        </div>
+      </section>
+      <section id="inputs">
+        <div class="container">
+          <div class="section-h2">Текстовые поля</div>
+          <div class="section-h3">Без иконок</div>
+          <div class="input input-text">
+            <input type="text" placeholder="Введите ваше имя" required="required"/>
+          </div><br>
+          <div class="input input-tel">
+            <input type="tel" placeholder="Введите ваш телефон" required="required"/>
+          </div><br>
+          <div class="textarea">
+            <textarea placeholder="Введите сообщение"></textarea>
+          </div>
+          <div class="section-h3">С иконкой</div>
+          <div class="input input-tel input-icon">
+            <div class="input-icon__wrap"><span class="icon">
+                <svg width="20" height="20">
+                  <use xlink:href="/img/sprites/sprite.svg#ic_person"></use>
+                </svg></span>
+              <input type="tel" placeholder="Введите ваше имя" required="required"/>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="selects">
+        <div class="container">
+          <div class="section-h2">Select</div>
+          <div class="select">
+            <select required="required" data-title="Выберите">
+              <option value="" disabled="disabled" selected="selected">Выберите</option>
+              <option value="item">Опция 1</option>
+              <option value="item">Опция 2</option>
+            </select>
+          </div><br>
+          <div class="select">
+            <select required="required" data-title="Выберите" data-icon="#ic_person">
+              <option value="" disabled="disabled" selected="selected">Выберите</option>
+              <option value="item">Опция 1</option>
+              <option value="item">Опция 2</option>
+            </select>
+          </div>
+        </div>
+      </section>
+      <section id="forms">
+        <div class="container">
+          <div class="section-h2">Формы</div>
+          <form action="/">
+            <div class="form__field">
+              <div class="input input-text">
+                <input type="text" placeholder="Введите ваше имя" required="required"/>
+              </div>
+            </div>
+            <div class="form__field">
+              <div class="input input-tel">
+                <input type="tel" placeholder="Введите ваш телефон" required="required"/>
+              </div>
+            </div>
+            <div class="form__field">
+              <div class="textarea">
+                <textarea placeholder="Введите сообщение"></textarea>
+              </div>
+            </div>
+            <button class="btn" type="submit">Отправить</button>
+          </form>
+        </div>
+      </section>
+      <section id="checkbox">
+        <div class="container">
+          <div class="section-h2">Радиокнопки</div>
+          <div class="section-h3">Радиокнопки</div>
+          <label class="radio">
+            <input type="radio" name="name"/><span class="radio__elem"></span><span class="radio__text">Unchecked</span>
+          </label>
+          <label class="radio">
+            <input type="radio" name="name" checked=""/><span class="radio__elem"></span><span class="radio__text">Checked</span>
+          </label>
+          <label class="radio">
+            <input type="radio" name="name" disabled="disabled"/><span class="radio__elem"></span><span class="radio__text">Disabled</span>
+          </label>
+          <div class="section-h3">Чекбоксы</div>
+          <label class="checkbox">
+            <input type="checkbox"/><span class="checkbox__elem"></span><span class="checkbox__text">Unchecked</span>
+          </label>
+          <label class="checkbox">
+            <input type="checkbox" disabled=""/><span class="checkbox__elem"></span><span class="checkbox__text">Unchecked & disabled</span>
+          </label>
+          <label class="checkbox">
+            <input type="checkbox" checked=""/><span class="checkbox__elem"></span><span class="checkbox__text">Checked</span>
+          </label>
+          <label class="checkbox">
+            <input type="checkbox" checked="" disabled=""/><span class="checkbox__elem"></span><span class="checkbox__text">Checked & disabled</span>
+          </label>
+        </div>
+      </section>
+      <section id="edittext">
+        <div class="container">
+          <div class="edit-content">
+            <h1>Заголовок h1</h1>
+            <h2>Заголовок h2</h2>
+            <h3>Заголовок h3</h3>
+            <h4>Заголовок h4</h4><br>
+            <h3>Параграф p</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h3>Other tags</h3><br>
+            <h4>Ссылка</h4><a class="link-hover" href="#" title="Ссылка на ресурс">Ссылка на ресурс</a><br><br>
+            <h4>Bold</h4><br>
+            <bold>Lorem ipsum dolor sit amet, consectetur</bold><br><br>
+            <h4>Italic</h4><br><i>Lorem ipsum dolor sit amet, consectetur</i><br><br>
+            <h3>Маркированный список</h3>
+            <ul>
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+            </ul>
+            <h3>Нумерованный список</h3>
+            <ol>
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+            </ol>
+            <div class="table">
+              <table>
+                <tbody>
+                  <tr class="head">
+                    <th>Заголовок таблицы</th>
+                    <th>Заголовок таблицы</th>
+                  </tr>
+                  <tr class="row">
+                    <th>Столбец таблицы</th>
+                    <th>Столбец таблицы</th>
+                  </tr>
+                  <tr class="row">
+                    <th>Столбец таблицы</th>
+                    <th>Столбец таблицы</th>
+                  </tr>
+                  <tr class="row">
+                    <th>Столбец таблицы</th>
+                    <th>Столбец таблицы</th>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="tables">
+        <div class="container">
+          <div class="section-h2">Адаптивная таблица</div>
+          <div class="edit-content">
+            <div class="table table--responsive">
+              <table>
+                <thead>
+                  <tr class="head">
+                    <th>Заголовок 1</th>
+                    <th>Заголовок 2</th>
+                    <th>Заголовок 3</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-title="Заголовок 1">123</td>
+                    <td data-title="Заголовок 2">123</td>
+                    <td data-title="Заголовок 3">123</td>
+                  </tr>
+                  <tr>
+                    <td data-title="Заголовок 1">123</td>
+                    <td data-title="Заголовок 2">123</td>
+                    <td data-title="Заголовок 3">123</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="popup__wrp" id="callback">
+        <div class="popup popup-callback">
+          <div class="popup-close"><a href="#close">
+              <svg width="24" height="24">
+                <use xlink:href="/img/sprites/sprite.svg#ic_close"></use>
+              </svg></a></div>
+          <div class="popup-content">
+            <div class="section-h3">Попап формы</div>
+            <form action="">
+              <div class="form__field">
+                <div class="input input-text">
+                  <input type="text" placeholder="Ваше имя" required="required"/>
+                </div>
+              </div>
+              <div class="form__field">
+                <div class="input input-tel">
+                  <input type="tel" placeholder="Ваш телефон" required="required"/>
+                </div>
+              </div>
+              <div class="form__field">
+                <div class="input input-hidden">
+                  <input type="hidden"/>
+                </div>
+              </div>
+              <div class="form__submit">
+                <button class="btn btn-round" type="submit">Отправить</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-logo">
+          <div class="footer-logo__img"></div>
+        </div>
+        <div class="footer-nav">
+          <ul class="footer-nav__ul"></ul>
+        </div>
+        <div class="footer-feedback"></div>
+      </div>
+    </footer>
+    <div class="scroll-top">
+      <svg width="24" height="24">
+        <use xlink:href="/img/sprites/sprite.svg#ic_up"></use>
+      </svg>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
