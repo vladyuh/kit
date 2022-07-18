@@ -1,0 +1,14 @@
+include ../../components/burger/burger
+.mobilemenu
+  .container
+    .mobilemenu__header
+        +burger('burger_open')
+    .mobilemenu__nav
+      ul.mobilemenu__nav-list
+        li.mobilemenu__nav-item: a(href="#breadcrumbs").mobilemenu__nav-link Breadcrumbs
+        li.mobilemenu__nav-item: a(href="#buttons").mobilemenu__nav-link Buttons
+        li.mobilemenu__nav-item: a(href="#inputs").mobilemenu__nav-link Inputs
+        li.mobilemenu__nav-item: a(href="#selects").mobilemenu__nav-link Selects
+        li.mobilemenu__nav-item: a(href="#forms").mobilemenu__nav-link Form
+        li.mobilemenu__nav-item: a(href="#checkbox").mobilemenu__nav-link Checkboxes
+        li.mobilemenu__nav-item: a(href="#edittext").mobilemenu__nav-link Text

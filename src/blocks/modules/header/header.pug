@@ -1,21 +1,16 @@
 include ../../components/burger/burger
 header.header
     .container
-        .header-burger
+        .header__burger
             +burger
-        .header-logo
-            .header-logo__img
-        .header-nav
-            ul.header-nav__ul
-                li: a(href="#breadcrumbs") Breadcrumbs
-                li: a(href="#buttons") Buttons
-                li: a(href="#inputs") Inputs
-                li: a(href="#selects") Selects
-                li: a(href="#forms") Form
-                li: a(href="#checkbox") Checkboxes
-                li: a(href="#edittext") Text
-            ul.header-nav__more
-                li.header-nav__moreLi(style="display:none")
-                    a More
-                    ul.submenu
-        .header-feedback
+        .header__logo
+        .header__nav
+            ul.header__nav-list
+                li.header__nav-item: a(href="#breadcrumbs").header__nav-link Breadcrumbs
+                li.header__nav-item: a(href="#buttons").header__nav-link Buttons
+                li.header__nav-item: a(href="#inputs").header__nav-link Inputs
+                li.header__nav-item: a(href="#selects").header__nav-link Selects
+                li.header__nav-item: a(href="#forms").header__nav-link Form
+                li.header__nav-item: a(href="#checkbox").header__nav-link Checkboxes
+                li.header__nav-item: a(href="#edittext").header__nav-link Text
+        .header__feedback

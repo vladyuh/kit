@@ -1,7 +1,7 @@
 include ../../../views/helpers/mixins.pug
 //- inputs
 mixin input(data)
-  .input(class="input-"+(data.type ? data.type : '')+"")
+  .input(class="input_"+(data.type ? data.type : '')+"")
     if data.label
       span.label=data.label
     if data.required
@@ -10,10 +10,10 @@ mixin input(data)
       input(type=data.type, name=data.name, placeholder=data.placeholder)
 //- input with icon
 mixin input-icon(data)
-  .input(class="input-"+(data.type ? data.type : '')+" input-icon")
+  .input(class="input_"+(data.type ? data.type : '')+" input_icon")
     if data.label
       span.label=data.label
-    .input-icon__wrap
+    .input_icon__wrap
       span.icon: +icons(data.icon,'20')
       if data.required
         input(type=data.type, name=data.name, placeholder=data.placeholder, required)
@@ -33,7 +33,7 @@ mixin textarea-icon(data)
   .textarea
     if data.label
       span.label=data.label
-    .input-icon__wrap
+    .textarea_icon__wrap
       span.icon: +icons(data.icon,'20')
       if data.required
         textarea(placeholder=data.placeholder, name=data.name, required)

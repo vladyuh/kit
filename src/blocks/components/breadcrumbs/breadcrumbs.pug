@@ -1,8 +1,10 @@
 mixin breadcrumb(data, modify)
   .breadcrumb(class=""+(modify ? modify : '')+"")
-    ul
+    ul.breadcrumb__list
       each item in data
         if item.isActive
-          li: a(href=item.link class="is-active")= item.text
+          li.breadcrumb__item
+            a(href=item.link).breadcrumb__link.breadcrumb__link_active= item.text
         else
-          li: a(href=item.link)= item.text
+          li.breadcrumb__item
+            a(href=item.link).breadcrumb__link= item.text

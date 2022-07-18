@@ -5,6 +5,7 @@ $paddingWithIcon: 15px 15px 15px 40px;
 $invalid: red;
 $inputHeight: 48px;
 $iconDimensions: 20px;
+$border: #448aff;
 
 input:not([type=checkbox]):not([type=radio]),
 textarea {
@@ -23,9 +24,8 @@ input[type="submit"] {
 
 input:not([type=checkbox]):not([type=radio]),
 textarea {
-  border: none;
   transition: all 0.25s ease;
-  border: 1px solid $btn;
+  border: 1px solid $border;
   width: 100%;
   outline: none;
   padding: $defaultPadding;
@@ -48,7 +48,7 @@ textarea {
 
 .input,
 .textarea {
-  &-icon__wrap {
+  &_icon__wrap {
     position: relative;
 
     .icon {
@@ -69,9 +69,9 @@ textarea {
   }
 }
 
-.select{
+.select {
 
-  &-hidden {
+  &__hidden {
     position: absolute;
     top: 0;
     left: 0;
@@ -93,13 +93,13 @@ textarea {
     -ms-user-select: none;
     user-select: none;
     color: #000;
-    width: 100%!important;
+    width: 100% !important;
     position: relative;
   }
 
-  &-styled, select{
+  &__styled, select {
     transition: all 0.25s ease;
-    border: 1px solid $btn;
+    border: 1px solid $border;
     width: 100%;
     outline: none;
     padding: $defaultPadding;
@@ -110,10 +110,10 @@ textarea {
     height: $inputHeight;
   }
 
-  &-styled {
+  &__styled {
     position: relative;
 
-    &-with-icon{
+    &_icon {
       padding: $paddingWithIcon;
       position: relative;
 
@@ -126,7 +126,7 @@ textarea {
         width: $iconDimensions;
         height: $iconDimensions;
 
-        svg{
+        svg {
           width: 100%;
           height: 100%;
           object-fit: contain;
@@ -142,7 +142,7 @@ textarea {
       color: #000;
     }
 
-    &.active::after {
+    &_active::after {
       -webkit-transform: translateY(-50%) scaleY(-1);
       -ms-transform: translateY(-50%) scaleY(-1);
       transform: translateY(-50%) scaleY(-1)
@@ -152,7 +152,7 @@ textarea {
       content: "";
       width: 24px;
       min-width: 24px;
-      height:24px;
+      height: 24px;
       background-image: url(../img/svg/ic_expand.svg);
       background-repeat: no-repeat;
       background-size: contain;
@@ -160,7 +160,7 @@ textarea {
       -webkit-transition: -webkit-transform .3s;
       transition: transform .3s;
       -o-transition: transform .3s;
-      transition: transform .3s,-webkit-transform .3s;
+      transition: transform .3s, -webkit-transform .3s;
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
@@ -169,7 +169,7 @@ textarea {
 
   }
 
-  &-options {
+  &__options {
     display: none;
     position: absolute;
     top: calc(100% + 1px);
@@ -183,42 +183,13 @@ textarea {
     overflow-y: auto;
     overflow-x: hidden;
     background: #fff;
-    -webkit-box-shadow: 0 0 9px rgba(0,0,0,.25);
-    box-shadow: 0 0 9px rgba(0,0,0,.25);
+    -webkit-box-shadow: 0 0 9px rgba(0, 0, 0, .25);
+    box-shadow: 0 0 9px rgba(0, 0, 0, .25);
     color: #000;
     width: 100%;
 
-    &.active{
+    &_active {
       display: block;
-    }
-
-    @media screen and (max-width: 480px){
-      display: block;
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      max-height: 100%;
-      transition: all 0.25s ease;
-      transform: translateX(-100%);
-      -webkit-box-shadow: none;
-      box-shadow: none;
-      &::before{
-        box-sizing: border-box;
-        content: attr(data-title);
-        display: block;
-        font-weight: 600;
-        padding: $defaultPadding;
-        font-size: $font-size + 2px;
-        line-height: $line-height + 2px;
-        height: $inputHeight;
-      }
-
-      &.active{
-        transform: translateX(0%);
-      }
-
     }
 
     li {
@@ -240,7 +211,7 @@ textarea {
 
     li:hover,
     li.active {
-      background: $btn;
+      background: $border;
       color: #fff
     }
 

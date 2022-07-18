@@ -32,7 +32,7 @@ $disabledBg: #959595;
     }
 
     & .checkbox__elem {
-        top: 0.15em;
+        top: 0;
         position: relative;
         height: 20px;
         width: 20px;
@@ -127,12 +127,12 @@ $disabledBg: #959595;
     }
 
     &__elem {
-        top: 0.15em;
+        top: 0;
         position: relative;
         height: 20px;
         width: 20px;
         min-width: 20px;
-        border: 1px solid $btn;
+        border: 1px solid $borderColor;
         display: inline-block;
         margin-right: rem(10);
         border-radius: 50%;

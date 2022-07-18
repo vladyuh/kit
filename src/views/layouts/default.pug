@@ -30,10 +30,10 @@ html(lang="ru")
 		link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
 		link(href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet")
 		
-	body.perf-no-animation.page
+	body.page.page_noanimation
 		include ../../blocks/modules/header/header.pug
-		include ../../blocks/components/mobileMenu/mobileMenu.pug
-		main
+		include ../../blocks/components/mobile-menu/mobile-menu.pug
+		main.main
 			block content
 		include ../../blocks/modules/footer/footer.pug
 		.scroll-top

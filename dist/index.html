@@ -28,63 +28,53 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
   </head>
-  <body class="perf-no-animation page">
+  <body class="page page_noanimation">
     <header class="header">
       <div class="container">
-        <div class="header-burger">
-              <div class="burger"><span></span><span></span><span></span><span></span></div>
+        <div class="header__burger">
+              <div class="burger"><span class="burger__line"></span><span class="burger__line"></span><span class="burger__line"></span><span class="burger__line"></span></div>
         </div>
-        <div class="header-logo">
-          <div class="header-logo__img"></div>
-        </div>
-        <div class="header-nav">
-          <ul class="header-nav__ul">
-            <li><a href="#breadcrumbs">Breadcrumbs</a></li>
-            <li><a href="#buttons">Buttons</a></li>
-            <li><a href="#inputs">Inputs</a></li>
-            <li><a href="#selects">Selects</a></li>
-            <li><a href="#forms">Form</a></li>
-            <li><a href="#checkbox">Checkboxes</a></li>
-            <li><a href="#edittext">Text</a></li>
-          </ul>
-          <ul class="header-nav__more">
-            <li class="header-nav__moreLi" style="display:none"><a>More</a>
-              <ul class="submenu"></ul>
-            </li>
+        <div class="header__logo"></div>
+        <div class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item"><a class="header__nav-link" href="#breadcrumbs">Breadcrumbs</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#buttons">Buttons</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#inputs">Inputs</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#selects">Selects</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#forms">Form</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#checkbox">Checkboxes</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#edittext">Text</a></li>
           </ul>
         </div>
-        <div class="header-feedback"></div>
+        <div class="header__feedback"></div>
       </div>
     </header>
-    <div class="mobileMenu">
+    <div class="mobilemenu">
       <div class="container">
-        <div class="mobileMenu-header">
-          <div class="mobileMenu-header__toggle">
-                <div class="burger open"><span></span><span></span><span></span><span></span></div>
-          </div>
+        <div class="mobilemenu__header">
+              <div class="burger burger_open"><span class="burger__line"></span><span class="burger__line"></span><span class="burger__line"></span><span class="burger__line"></span></div>
         </div>
-        <div class="mobileMenu-nav">
-          <ul class="mobileMenu-nav__ul">
-            <li><a href="#breadcrumbs">Breadcrumbs</a></li>
-            <li><a href="#buttons">Buttons</a></li>
-            <li><a href="#inputs">Inputs</a></li>
-            <li><a href="#selects">Selects</a></li>
-            <li><a href="#forms">Form</a></li>
-            <li><a href="#checkbox">Checkboxes</a></li>
-            <li><a href="#edittext">Text</a></li>
+        <div class="mobilemenu__nav">
+          <ul class="mobilemenu__nav-list">
+            <li class="mobilemenu__nav-item"><a class="mobilemenu__nav-link" href="#breadcrumbs">Breadcrumbs</a></li>
+            <li class="mobilemenu__nav-item"><a class="mobilemenu__nav-link" href="#buttons">Buttons</a></li>
+            <li class="mobilemenu__nav-item"><a class="mobilemenu__nav-link" href="#inputs">Inputs</a></li>
+            <li class="mobilemenu__nav-item"><a class="mobilemenu__nav-link" href="#selects">Selects</a></li>
+            <li class="mobilemenu__nav-item"><a class="mobilemenu__nav-link" href="#forms">Form</a></li>
+            <li class="mobilemenu__nav-item"><a class="mobilemenu__nav-link" href="#checkbox">Checkboxes</a></li>
+            <li class="mobilemenu__nav-item"><a class="mobilemenu__nav-link" href="#edittext">Text</a></li>
           </ul>
         </div>
-        <div class="mobileMenu-footer"></div>
       </div>
     </div>
-    <main>
+    <main class="main">
       <section id="breadcrumbs">
         <div class="container">
           <div class="section-h2">Хлебные крошки</div>
           <div class="breadcrumb">
-            <ul>
-              <li><a href="/">Главная</a></li>
-              <li><a class="is-active" href="/">Элементы</a></li>
+            <ul class="breadcrumb__list">
+              <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Главная</a></li>
+              <li class="breadcrumb__item"><a class="breadcrumb__link breadcrumb__link_active" href="/">Элементы</a></li>
             </ul>
           </div>
         </div>
@@ -95,23 +85,14 @@
           <div class="buttons">
             <div class="section-h3">Кнопки</div>
             <button class="btn">Кнопка</button>
-            <button class="btn btn-disabled">Кнопка</button>
-          </div><br>
-          <div class="buttons">
-            <div class="section-h3">Кнопки с закругленными углами</div>
-            <button class="btn btn-round">Кнопка с закругленными углами</button>
-            <button class="btn btn-disabled btn-round">Кнопка с закругленными углами</button>
-          </div><br>
-          <div class="buttons">
-            <div class="section-h3">Кнопка cсылка</div>
-            <button class="btn btn-link btn-round">Кнопка ссылка<a data-popup href="#callback"></a></button>
+            <button class="btn btn_disabled">Кнопка</button>
           </div><br>
           <div class="buttons">
             <div class="section-h3">Кнопка отправки</div>
-            <button class="btn btn-round" type="submit">Кнопка отправки</button>
-            <button class="btn btn-loading btn-round" type="submit">Кнопка отправки</button>
-            <button class="btn btn-success btn-round" type="submit">Кнопка отправки</button>
-            <button class="btn btn-round btn-disabled" type="submit">Кнопка отправки</button>
+            <button class="btn" type="submit">Кнопка отправки</button>
+            <button class="btn btn_loading" type="submit">Кнопка отправки</button>
+            <button class="btn btn_success" type="submit">Кнопка отправки</button>
+            <button class="btn btn_disabled" type="submit">Кнопка отправки</button>
           </div>
         </div>
       </section>
@@ -119,18 +100,18 @@
         <div class="container">
           <div class="section-h2">Текстовые поля</div>
           <div class="section-h3">Без иконок</div>
-          <div class="input input-text">
+          <div class="input input_text">
             <input type="text" placeholder="Введите ваше имя" required="required"/>
           </div><br>
-          <div class="input input-tel">
+          <div class="input input_tel">
             <input type="tel" placeholder="Введите ваш телефон" required="required"/>
           </div><br>
           <div class="textarea">
             <textarea placeholder="Введите сообщение"></textarea>
           </div>
           <div class="section-h3">С иконкой</div>
-          <div class="input input-tel input-icon">
-            <div class="input-icon__wrap"><span class="icon">
+          <div class="input input_tel input_icon">
+            <div class="input_icon__wrap"><span class="icon">
                 <svg width="20" height="20">
                   <use xlink:href="/img/sprites/sprite.svg#ic_person"></use>
                 </svg></span>
@@ -163,12 +144,12 @@
           <div class="section-h2">Формы</div>
           <form action="/">
             <div class="form__field">
-              <div class="input input-text">
+              <div class="input input_text">
                 <input type="text" placeholder="Введите ваше имя" required="required"/>
               </div>
             </div>
             <div class="form__field">
-              <div class="input input-tel">
+              <div class="input input_tel">
                 <input type="tel" placeholder="Введите ваш телефон" required="required"/>
               </div>
             </div>
@@ -264,7 +245,7 @@
         <div class="container">
           <div class="section-h2">Адаптивная таблица</div>
           <div class="edit-content">
-            <div class="table table--responsive">
+            <div class="table table_responsive">
               <table>
                 <thead>
                   <tr class="head">
@@ -290,27 +271,27 @@
           </div>
         </div>
       </section>
-      <div class="popup__wrp" id="callback">
-        <div class="popup popup-callback">
-          <div class="popup-close"><a href="#close">
+      <div class="popup" id="callback">
+        <div class="popup__wrapper">
+          <div class="popup__close"><a href="#close">
               <svg width="24" height="24">
                 <use xlink:href="/img/sprites/sprite.svg#ic_close"></use>
               </svg></a></div>
-          <div class="popup-content">
+          <div class="popup__content">
             <div class="section-h3">Попап формы</div>
-            <form action="">
+            <form class="form" action="">
               <div class="form__field">
-                <div class="input input-text">
+                <div class="input input_text">
                   <input type="text" placeholder="Ваше имя" required="required"/>
                 </div>
               </div>
               <div class="form__field">
-                <div class="input input-tel">
+                <div class="input input_tel">
                   <input type="tel" placeholder="Ваш телефон" required="required"/>
                 </div>
               </div>
               <div class="form__field">
-                <div class="input input-hidden">
+                <div class="input input_hidden">
                   <input type="hidden"/>
                 </div>
               </div>
@@ -324,13 +305,9 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <div class="footer-logo">
-          <div class="footer-logo__img"></div>
-        </div>
-        <div class="footer-nav">
-          <ul class="footer-nav__ul"></ul>
-        </div>
-        <div class="footer-feedback"></div>
+        <div class="footer__logo"></div>
+        <div class="footer__nav"></div>
+        <div class="footer__feedback"></div>
       </div>
     </footer>
     <div class="scroll-top">

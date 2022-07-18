@@ -1,23 +1,17 @@
-$symbol: ' - ';
+$symbol: " - ";
 
 .breadcrumb {
     background-color: transparent;
-    & ul {
+
+    &__list {
         display: flex;
         align-items: center;
         list-style-type: none;
         overflow-x: auto;
         white-space: nowrap;
     }
-    & li {
-        & a {
-            &:hover {
-                text-decoration: underline;
-            }
-            &.is-active{
-                font-weight: 600;
-            }
-        }
+
+    &__item {
         &::after {
             content: $symbol;
             display: inline-block;
@@ -27,6 +21,15 @@ $symbol: ' - ';
         }
         &:last-child::after {
             display: none;
+        }
+    }
+
+    &__link {
+        &:hover {
+            text-decoration: underline;
+        }
+        &_active {
+            font-weight: 600;
         }
     }
 }

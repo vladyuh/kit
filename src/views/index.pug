@@ -32,24 +32,14 @@ block content
             .buttons
                 +h3('Кнопки')
                 button.btn Кнопка
-                button.btn.btn-disabled Кнопка
-            br
-            .buttons
-                +h3('Кнопки с закругленными углами')
-                button.btn.btn-round Кнопка с закругленными углами
-                button.btn.btn-disabled.btn-round Кнопка с закругленными углами
-            br
-            .buttons
-                +h3('Кнопка cсылка')
-                button.btn.btn-link.btn-round Кнопка ссылка
-                    a(data-popup href="#callback")
+                button.btn.btn_disabled Кнопка
             br
             .buttons
                 +h3('Кнопка отправки')
-                button.btn.btn-round(type="submit") Кнопка отправки
-                button.btn.btn-loading.btn-round(type="submit") Кнопка отправки
-                button.btn.btn-success.btn-round(type="submit") Кнопка отправки
-                button.btn.btn-round.btn-disabled(type="submit") Кнопка отправки
+                button.btn(type="submit") Кнопка отправки
+                button.btn.btn_loading(type="submit") Кнопка отправки
+                button.btn.btn_success(type="submit") Кнопка отправки
+                button.btn.btn_disabled(type="submit") Кнопка отправки
     section#inputs
         .container
             +h2('Текстовые поля')
